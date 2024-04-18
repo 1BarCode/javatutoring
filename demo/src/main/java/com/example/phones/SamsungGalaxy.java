@@ -18,4 +18,9 @@ public class SamsungGalaxy implements AndroidSmartPhone {
     public void call(String number) {
         System.out.println("Calling " + number + " with " + modelName);
     }
+
+    @Override
+    public void chargeDevice() {
+        chargeWithUsbCPort();
+    }
 }

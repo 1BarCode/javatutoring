@@ -1,17 +1,17 @@
 package com.example.people;
 
-import com.example.phones.AppleSmartPhone;
+import com.example.phones.Chargable;
 
-public class Person {
+public class Person<T extends Chargable> {
     private String name;
-    private AppleSmartPhone phone;
+    private T phone;
 
-    public Person(String name, AppleSmartPhone phone) {
+    public Person(String name, T phone) {
         this.name = name;
         this.phone = phone;
     }
 
     public void chargePhone() {
-        phone.chargeWithLightningPort();
+        phone.chargeDevice();
     }
 }

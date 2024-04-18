@@ -18,4 +18,9 @@ public class IPhoneX implements AppleSmartPhone {
     public void call(String number) {
         System.out.println("Calling " + number + " with " + modelName);
     }
+
+    @Override
+    public void chargeDevice() {
+        chargeWithLightningPort();
+    }
 }
