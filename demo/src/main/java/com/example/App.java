@@ -14,14 +14,19 @@ public class App {
     public static void main(String[] args) {
         String name = "John";
 
-        AppleSmartPhone iPhoneX = new IPhoneX(name);
-        Person<AppleSmartPhone> user1 = new Person<AppleSmartPhone>(name, iPhoneX);
+        AppleSmartPhone iPhoneX1 = new IPhoneX(name);
+        AppleSmartPhone iPhoneX2 = new IPhoneX(name);
 
-        String name2 = "Jane";
-        AndroidSmartPhone samsungGalaxy = new SamsungGalaxy(name2);
-        Person<AndroidSmartPhone> user2 = new Person<AndroidSmartPhone>(name2, samsungGalaxy);
+        System.out.println("equals: " + iPhoneX1.equals(iPhoneX2));
 
-        user1.chargePhone();
-        user2.chargePhone();
+        // Person<AppleSmartPhone> user1 = new Person<AppleSmartPhone>(name, iPhoneX);
+
+        // String name2 = "Jane";
+        // AndroidSmartPhone samsungGalaxy = new SamsungGalaxy(name2);
+        // Person<AndroidSmartPhone> user2 = new Person<AndroidSmartPhone>(name2,
+        // samsungGalaxy);
+
+        // user1.chargePhone();
+        // user2.chargePhone();
     }
 }
